@@ -1,0 +1,27 @@
+{
+  "name": "quiz_math",
+  "version": "1.0.0",
+  "description": "Una App creada para realizar un Quiz de Matemáticas...",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jorge Osorio",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.7",
+    "express-mysql-session": "^2.1.8",
+    "express-session": "^1.17.3",
+    "handlebars": "^4.7.7",
+    "jsdom": "^21.1.0",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.20",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0"
+  }
+}

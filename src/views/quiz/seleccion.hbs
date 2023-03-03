@@ -1,0 +1,50 @@
+<div class="container p-4">
+  <div class="row">
+    <div class="col-md-10 mx-auto">
+      <div class="card text-white bg-dark text-center w-100">
+        <div class="card-body">
+          <div class="text-center card-text">
+            <div class="card-title text-white">
+              <h4>Seleccione su quiz:</h4>
+            </div>
+            <div class="card-body">
+              {{!-- <img src="/images/mathrepeat.jpg" alt="mathrepeat" class="card-img-top mx-auto m-2 round-circle w-50"> --}}
+
+              <hr>
+              <form action="/api/quiz" method="post">
+                <div class="form-group">
+                  <button type="submit" name="sele" value="algebra" class="btn btn-primary border-light btn-block">
+                    <h2>
+                      Álgebra
+                    </h2>
+                  </button>
+                </div>
+
+                <div class="form-group">
+                  {{!-- <div class="w-100"></div> --}}
+                  <button type="submit" name="sele" value="geometrya" class="btn btn-primary border-light btn-block"
+                    disabled>
+                    <h2>
+                      Geometría Analítica
+                    </h2>
+                    <h4>En construcción</h4>
+                  </button>
+                </div>
+                <div class="form-group">
+                  {{!-- <div class="w-100"></div> --}}
+                  <button type="submit" name="sele" value="calculo" class="btn btn-primary border-light btn-block"
+                    disabled>
+                    <h2>
+                      Cálculo
+                    </h2>
+                    <h4>En construcción</h4>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

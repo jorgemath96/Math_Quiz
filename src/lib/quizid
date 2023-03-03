@@ -1,0 +1,21 @@
+module.export = {
+  idVerify(ident) {
+    if (['algebra', 'geometrya', 'calculo'].includes(ident)) {
+      true;
+      // next();
+    } else {
+      false;
+      // return res.redirect('/api/quiz');
+    }
+  }
+  
+  // idVerifyQuiz() {
+  //   number = parseInt(number);
+  //   if (indexArray.length === number) {
+  //     return next();
+  //   } else {
+  //     let num = indexArray.length-1;
+  //     return res.redirect(`/api/quiz/${ident}/${num}`);
+  //   }
+  // }
+}

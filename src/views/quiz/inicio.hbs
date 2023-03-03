@@ -1,0 +1,29 @@
+<div class="container p-4">
+  <div class="row">
+    <div class="col col-md-10 mx-auto">
+      <div class="card text-center text-white bg-dark mb-3 w-100">
+        <div class="card-body">
+          <img src="/images/mathrepeat.jpg" alt="mathrepeat" class="card-img-top mx-auto m-2 round-circle w-50">
+
+          <hr>
+          <form action="/api/quiz/{{ Id }}" class="form-group" method="post">
+            <div class="form-group">
+              <button type="submit" name="quizStatus" value="cont" class="btn btn-success border-light w-50">
+                <h2>
+                  Iniciar el Quiz
+                </h2>
+              </button>
+            </div>
+            <div class="form-group">
+              <button type="submit" name="quizStatus" value="back" class="btn btn-danger border-light w-50">
+                <h2>
+                  Cancelar el Quiz
+                </h2>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

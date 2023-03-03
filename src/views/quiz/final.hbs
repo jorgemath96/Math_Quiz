@@ -1,0 +1,24 @@
+<div class="container p-4 text-center">
+  <div class="col col-md text-center">
+    <div class="card text-white bg-dark mb-3 w-100">
+      <div class="card-title">
+        <h2>
+          Su puntaje final del Quiz es:
+        </h2>
+        <br>
+        <h2> {{puntaje}} </h2>
+        <hr>
+        <hr>
+      </div>
+      <div class="card-body">
+        <form action="/api/quiz" class="form-group" method="post">
+          <button type="submit" class="btn btn-primary border-light incorrect">
+            <h3>
+              Nuevo Quiz
+            </h3>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

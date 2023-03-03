@@ -1,0 +1,11 @@
+.correct:active {
+  background-color: green;
+  box-shadow: 0 10px green;
+  transform: translateY(10px);
+}
+
+.incorrect:active {
+  background-color: red;
+  box-shadow: 0 10px red;
+  transform: translateY(10px);
+}

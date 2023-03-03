@@ -1,0 +1,36 @@
+<form action="/api/quiz/{{ Id }}/{{ num }}" method="post">
+  <div class="card text-center bg-dark text-white mb-5 w-90" style="max-width: 40rem;">
+
+      {{#each respuesta}}
+      {{#if (istrue this.[1])}}
+      <div class="form-group">
+        <button class="btn btn-secondary btn-block" type="submit" name="opcion" value="true">
+          <p>
+          <article>
+            <dl>
+              <dd> {{this.[0]}} </dd>
+            </dl>
+          </article>
+          </p>
+        </button>
+      </div>
+      <div class="w-100"></div>
+      {{else}}
+
+      <div class="form-group">
+        <button class="btn btn-secondary btn-block" type="submit" name="opcion" value={{this.[2]}}>
+          <p>
+          <article>
+            <dl>
+              <dd> {{this.[0]}} </dd>
+            </dl>
+          </article>
+          </p>
+        </button>
+      </div>
+      <div class="w-100"></div>
+      {{/if}}
+      {{/each}}
+    {{!-- </div> --}}
+  </div>
+</form>
