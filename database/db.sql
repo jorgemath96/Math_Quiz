@@ -5,15 +5,11 @@ USE dbquiz;
 -- USERS TABLE
 CREATE TABLE users_quiz (
     id INT(11) NOT NULL AUTO_INCREMENT,
-    user VARCHAR(20) NOT NULL,
-    pass VARCHAR(100) NOT NULL,
+    username VARCHAR(20) NOT NULL,
+    password VARCHAR(100) NOT NULL,
     fullname VARCHAR(100) NOT NULL,
-    PRIMARY KEY (id);
+    PRIMARY KEY (id)
 );
-
--- ALTER TABLE users
---     MODIFY id INT(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 2;
-
 
 -- LINKS TABLE
 CREATE TABLE alg(
